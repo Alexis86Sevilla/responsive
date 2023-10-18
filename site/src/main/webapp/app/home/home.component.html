@@ -1,0 +1,37 @@
+<div *ngIf="!account">
+  <div style="text-align: center">
+    <h1><span>Píldora de CSS Responsive</span></h1>
+
+    <h2>Aprende Responsive con Nunsys</h2>
+  </div>
+
+  <img style="width: 800px; margin-left: 300px" src="../../content/images/htmlLogo2.png" alt="" />
+  <img style="width: 800px; margin-left: 300px" src="../../content/images/cssLogo.png" alt="" />
+
+  <div>
+    <div class="alert alert-warning">
+      <span>Si desea </span>
+      <a class="alert-link" (click)="login()">iniciar sesión</a
+      ><span
+        >, puede intentar con las cuentas predeterminadas:<br />- Administrador (usuario="admin" y contraseña="admin") <br />- Usuario
+        (usuario="user" y contraseña="user").</span
+      >
+    </div>
+  </div>
+</div>
+
+<div *ngIf="account">
+  <div style="text-align: center">
+    <h1><span>Píldora de CSS Responsive</span></h1>
+
+    <h2>Aprende Responsive con Nunsys</h2>
+  </div>
+
+  <div id="info">
+    <div *ngFor="let item of content">
+      <h3 >{{ item.title }}</h3>
+      <hr />
+      <p >{{ item.info }}</p>
+    </div>
+  </div>
+</div>

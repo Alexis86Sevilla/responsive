@@ -1,0 +1,92 @@
+.home__container {
+  .home__header {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    &__title {
+      font-weight: bolder;
+    }
+
+    &__subtitle {
+      font-weight: bolder;
+    }
+
+    &__line {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+  }
+
+  .home__without-login{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    &__image{
+      width: 25%;
+    }
+  }
+
+  .home__content-container{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    .home__content{
+      padding: 1rem;
+      background-color: #ccc;
+      border-radius: 10px;
+      border: 1px solid grey;
+
+      &__title{
+        font-weight: 500;
+        text-align: center;
+      }
+
+      &__paragraph{
+        text-align: justify;
+      }
+    }
+  }
+}
+
+
+/* MEDIA QUERIES*/
+/* Media query  para pantallas más grandes */
+@media (max-width: 1400px) {
+  .home__without-login{
+    &__image{
+      width: 75%;
+    }
+  }
+}
+
+/* Media query para pantallas de PC medianas */
+@media (max-width: 992px) {
+  .home__without-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__content-container{
+    flex-direction: column;
+  }
+}
+
+/* Media query para móviles grandes */
+@media (max-width: 576px) {
+  .home__without-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image{
+      width: 15%;
+    }
+  }
+
+}

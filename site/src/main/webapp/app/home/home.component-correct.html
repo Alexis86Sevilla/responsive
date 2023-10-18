@@ -1,0 +1,42 @@
+<div class="home__container">
+  <div *ngIf="!account">
+    <div class="home__header">
+      <h1 class="home__header__title"><span>Píldora de CSS Responsive</span></h1>
+      <hr class="home__header__line" />
+      <h2 class="home__header__subtitle">Aprende Responsive con Nunsys</h2>
+    </div>
+
+    <div class="home__without-login">
+      <img class="home__without-login__image" src="../../content/images/htmlLogo2.png" alt="" />
+      <img class="home__without-login__image" src="../../content/images/cssLogo.png" alt="" />
+    </div>
+
+    <div>
+      <div class="alert alert-warning">
+        <span>Si desea </span>
+        <a class="alert-link" (click)="login()">iniciar sesión</a
+        ><span
+          >, puede intentar con las cuentas predeterminadas:<br />- Administrador (usuario="admin" y contraseña="admin") <br />- Usuario
+          (usuario="user" y contraseña="user").</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="account">
+    <div class="home__header">
+      <h1 class="home__header__title"><span>Píldora de CSS Responsive</span></h1>
+      <hr class="home__header__line" />
+      <h2 class="home__header__subtitle">Desarrollo de una web responsive: técnicas</h2>
+    </div>
+
+    <div class="home__content-container">
+      <div class="home__content" *ngFor="let item of content">
+        <h3 class="home__content__title">{{ item.title }}</h3>
+        <hr>
+        <p class="home__content__paragraph">{{ item.info }}</p>
+      </div>
+    </div>
+  
+  </div>
+</div>
