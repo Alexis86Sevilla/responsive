@@ -10,6 +10,10 @@ docker run --name responsive -e POSTGRES_USER=responsive -e POSTGRES_PASSWORD=12
 <li>Abre el back con IntelliJ y ejecútalo</li>
 </ul>
 
+# Objetivos
+
+El principal objetivo de este ejercicio es adaptar tanto el login como la pantalla Home cuando no se está logueado y cuando si y, si es posible, usar una convención de nomenclatura como BEM. 
+
 # Puntos de ruptura
 
 Para este ejercicio usaremos los siguientes puntos de ruptura:
